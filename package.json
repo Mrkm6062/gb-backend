@@ -17,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/Mrkm6062/gb-backend/issues"
   },
-  "homepage": "https://github.com/Mrkm6062/gb-backend#readme"
+  "homepage": "https://github.com/Mrkm6062/gb-backend#readme",
+  "dependencies": {
+    "@nestjs/config": "^4.0.3",
+    "@nestjs/jwt": "^11.0.2",
+    "@nestjs/mongoose": "^11.0.4",
+    "@nestjs/passport": "^11.0.5",
+    "bcrypt": "^6.0.0",
+    "mongoose": "^9.3.1",
+    "passport-jwt": "^4.0.1"
+  }
 }
