@@ -7,6 +7,7 @@ import { ShopsModule } from './modules/shops/shops.module';
 import { ProductsModule } from './modules/products/products.module';
 import { OrdersModule } from './modules/orders/orders.module';
 import { TenantMiddleware } from './common/middleware/tenant.middleware';
+import { Shop, ShopSchema } from './modules/shops/schemas/shop.schema';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { TenantMiddleware } from './common/middleware/tenant.middleware';
       }),
       inject: [ConfigService],
     }),
+    MongooseModule.forFeature([{ name: Shop.name, schema: ShopSchema }]),
     AuthModule,
     UsersModule,
     ShopsModule,
